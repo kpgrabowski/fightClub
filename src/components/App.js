@@ -1,26 +1,18 @@
 import React from 'react';
-import Navbar from './Navbar'
-import Top from './Top'
-import Wprowadzenie from './Wproiwadzenie'
-import Opinie from './Opinie'
-import Realizacje from './Realizacje'
-import Kontakt from './Kontakt'
-import Stopka from './Stopka'
-import PrawaAutorskie from './PrawaAutorskie'
+import Button from "@material-ui/core/Button";
+import Cardd from './Card';
 
 
 class App extends React.Component {
     render() {
         return (
             <div>
-                <Navbar/>
-                <Top/>
-                <Wprowadzenie/>
-                <Opinie/>
-                <Realizacje/>
-                <Kontakt/>
-                <Stopka/>
-                <PrawaAutorskie/>
+               <h4>Hello World</h4>
+                <Button variant="contained"
+                        color="primary">
+                    Hello World
+                </Button>
+                <Cardd/>
             </div>
         );
     }
