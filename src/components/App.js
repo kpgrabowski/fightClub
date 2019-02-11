@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import HeaderOfSide from './HeaderOfSide';
+import Photo from "./Photo";
 
 class App extends React.Component {
 
@@ -8,10 +9,10 @@ class App extends React.Component {
         return (
             <div>
                 <div>
-                 <HeaderOfSide/>
+                    <HeaderOfSide/>
                 </div>
                 <div>
-                    Siemanko
+                    <Photo/>
                 </div>
             </div>
         );

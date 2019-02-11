@@ -25,14 +25,16 @@ const styles = {
 };
 
 
-    function HeaderOfSide(props){
-        const { classes } = props;
-        return(
+class HeaderOfSide extends React.Component {
+
+    render() {
+        const {classes} = this.props;
+        return (
             <div className={classes.root}>
                 <AppBar position="static">
                     <Toolbar>
                         <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-                            <MenuIcon />
+                            <MenuIcon/>
                         </IconButton>
                         <Typography variant="h6" color="inherit" className={classes.grow}>
                             News
@@ -43,8 +45,7 @@ const styles = {
             </div>
         );
     }
-
-
+}
 
 
 HeaderOfSide.propTypes = {
