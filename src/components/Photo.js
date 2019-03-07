@@ -12,7 +12,10 @@ const styles = {
         height: 0,
     },
     mainPhoto: {
-        weight: '200px',
+        display: 'block',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        width: '50%',
     }
 };
 
@@ -23,7 +26,7 @@ class Photo extends React.Component {
     render() {
         const {classes} = this.props;
         return (
-            <div className={classes.mainPhoto}>
+            <div>
                 <div>
                     <CardMedia
                         className={classes.media}
@@ -31,9 +34,10 @@ class Photo extends React.Component {
                         title="hi"
                     />
                 </div>
-                <div>
+                <div className={classes.mainPhoto}>
                     <img src={require('../images/boxer.png')}
-                         alt={"hi"}/>
+                         alt={"hi"}
+                         />
                 </div>
             </div>
         );
