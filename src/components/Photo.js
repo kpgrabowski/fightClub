@@ -1,13 +1,15 @@
 import React from 'react';
-import Grid from "@material-ui/core/Grid";
-import Avatar from "@material-ui/core/Avatar";
 import { withStyles } from '@material-ui/core/styles';
+import CardMedia from '@material-ui/core/CardMedia';
 import PropTypes from 'prop-types';
 
 const styles = {
     photo: {
       weight: '900px',
       height: '200px',
+    },
+    media: {
+        height: 0,
     },
 };
 
@@ -19,9 +21,13 @@ class Photo extends React.Component {
         const {classes} = this.props;
         return (
             <div>
-                <Grid container justify="center" alignItems="center">
-                    <Avatar alt="boxer" src="/images/boxer.png" className={classes.photo} />
-                </Grid>
+                <div>
+                    <CardMedia
+                        className={classes.media}
+                        image="/images/hi.png"
+                        title="hi"
+                    />
+                </div>
             </div>
         );
     }
