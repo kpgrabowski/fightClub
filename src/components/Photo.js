@@ -11,6 +11,9 @@ const styles = {
     media: {
         height: 0,
     },
+    mainPhoto: {
+        weight: '200px',
+    }
 };
 
 
@@ -20,13 +23,17 @@ class Photo extends React.Component {
     render() {
         const {classes} = this.props;
         return (
-            <div>
+            <div className={classes.mainPhoto}>
                 <div>
                     <CardMedia
                         className={classes.media}
-                        image="/images/hi.png"
+                        image='/images/hi.png'
                         title="hi"
                     />
+                </div>
+                <div>
+                    <img src={require('../images/boxer.png')}
+                         alt={"hi"}/>
                 </div>
             </div>
         );
